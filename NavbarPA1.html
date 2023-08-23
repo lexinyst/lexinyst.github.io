@@ -25,9 +25,9 @@
 
 		.navMenu {
 			font-family: 'Advent Pro', sans-serif;
-			padding: 0px;
+			padding: 8px;
 			text-align: center;
-			margin: 0px auto;
+			margin: 7px auto;
 			width: fit-content;
 		}
 
@@ -36,7 +36,7 @@
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
-			padding: 0px;
+			padding: 6px;
 		}
 
 		.background {
@@ -71,14 +71,14 @@
 
 		let direction = "horizontal";
 		if (direction === "vertical") {
-			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:0px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
 
 
 		function navigate(id) {
 
 			if (id == 'home')
-				window.open("https://www.notion.so/Probie-Academy-65405afdabe34adf886860613148c78d", '_self').focus();
+				window.open("https://www.notion.so/Probie-Academy-65405afdabe34adf886860613148c78d", '_blank').focus();
 			else if (id == "registration")
 				window.open("https://www.notion.so/Registration-6910e42ba869498e906c23f6502f09db", '_blank').focus();
 			else if (id == "about_us")
