@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="registration" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Registration</a>
+		<a id="about us" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-person"></i> About Us</a>
+		<a id="Services" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Services</a>
+		<a id="Contact Us" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-phone"></i> Contact Us</a>
+		<a id="Free Resources" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Free Resources</a>
+		
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Probie-Academy-65405afdabe34adf886860613148c78d", '_blank').focus();
+			else if (id == "registration")
+				window.open("https://www.notion.so/Registration-6910e42ba869498e906c23f6502f09db", '_blank').focus();
+			else if (id == "about us")
+				window.open("https://www.notion.so/About-Us-c3dd36328f754dbe8d73bcc7581db50f", '_blank').focus();
+			else if (id == "services")
+				window.open("https://www.notion.so/Services-6306ca4b2b62490e843cc44b8c121291", '_blank').focus();
+			else if (id == "contact us")
+				window.open("https://www.notion.so/Contact-Us-b0d828a7d6b349889e432862d92bacad", '_blank').focus();
+			else if (id == "free resources")
+				window.open("https://www.notion.so/Free-Resources-4233f1d1a7c74ba6a0b054934c4cee5e", '_blank').focus();
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
